@@ -1,0 +1,23 @@
+@startuml
+title Cinema
+class Films {
+    -name: string
+    -director: string
+    -year: int
+    +isExistent(): bool
+    +getList(): List
+    +getSort() : List
+    +requestFilm(): void
+}
+class Users {
+    -name: string
+    -age: int
+    -balance: int
+    +Subscribe(): void
+    +Credit(): void
+    +rentFilm() : void
+}
+class NormalUsers {
+    +buyFilm(): void
+}
+@enduml
